@@ -1,0 +1,101 @@
+/*=== Geral =================================*/
+h4 {
+  font-size: 2rem;
+}
+
+/*=== MENU-EXPANDED =================================*/
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+}
+
+// Animação baixo para cima
+.menu {
+  transform: translateY(100%); 
+}
+
+body.menu-expanded .menu {
+  position: absolute;
+  top: 0;
+  padding-top: 5.5rem;
+  
+  transition: transform 300ms;
+  transform: translateY(0);
+}
+
+/*=== MENU =================================*/
+.menu .contact {
+  width: 345px;
+  height: 900px;
+
+  background: #302F3D;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  margin-bottom: 5.5rem;
+}
+
+.menu .data {
+  max-width: 30.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.6rem 3rem;
+}
+
+.technology {
+  padding-left: 3rem;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.languages div {
+  width: 9rem;
+  height: 2.5rem;
+  margin-bottom: 2rem;
+
+  text-align: center;
+  border-radius: 3rem;
+  background: #81D8F7;
+}
+
+.languages strong {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+}
+
+.experience {
+  padding-left: 3rem;
+}
+
+.experience ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.experience strong {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.experience small {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
